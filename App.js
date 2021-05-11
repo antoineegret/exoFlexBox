@@ -5,17 +5,56 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <View style={styles.container0}>
+      </View>
+      <View style={styles.container1}>
+      </View>
+      <View style={styles.container2}>
+      </View>
+      <View style={styles.container3}>
+      </View>
+      <View style={styles.container4}>
+      </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flex: 2,
+    flexDirection:'row',
+    
   },
+  container0: {
+    flex: 2,
+    backgroundColor: 'green',
+    
+  },
+  container1: {
+    flex: 2,
+    backgroundColor: 'red',
+    
+   
+    
+  },
+  container2: {
+    flex: 2,
+    backgroundColor: 'blue',
+    
+   
+    
+  },
+  container3: {
+    flex: 2,
+    backgroundColor: 'pink',
+    
+    
+    
+  },
+  container4: {
+    flex:2,
+    backgroundColor:'yellow',
+    
+  }
+
 });
