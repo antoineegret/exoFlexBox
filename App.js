@@ -5,56 +5,64 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <View style={styles.container0}>
+
+      <View style={styles.containerVertical}>
+
+        <View style={styles.containerVertical1}></View>
+        <View style={styles.containerVertical2}></View> 
+        <View style={styles.containerVertical3}></View>  
+
       </View>
-      <View style={styles.container1}>
+
+      <View style={styles.containerHorizontal}>
+
+      <View style={styles.containerHorizontal1}></View> 
+      <View style={styles.containerHorizontal2}></View> 
+      <View style={styles.containerHorizontal3}></View> 
+
       </View>
-      <View style={styles.container2}>
-      </View>
-      <View style={styles.container3}>
-      </View>
-      <View style={styles.container4}>
-      </View>
+
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 2,
-    flexDirection:'row',
-    
+    flex: 1,  
   },
-  container0: {
-    flex: 2,
-    backgroundColor: 'green',
-    
+
+  containerVertical: {
+    flex: 3,
+    flexDirection:'row',  
   },
-  container1: {
+
+  containerVertical1: {
     flex: 2,
-    backgroundColor: 'red',
-    
-   
-    
+    backgroundColor:'green', 
   },
-  container2: {
+  containerVertical2: {
     flex: 2,
-    backgroundColor: 'blue',
-    
-   
-    
+    backgroundColor:'red',
+
   },
-  container3: {
+  containerVertical3: {
+    flex: 2,
+    backgroundColor:'blue',
+  },
+
+  containerHorizontal: {
+    flex: 3,
+  },
+  containerHorizontal1: {
+    flex: 2,
+    backgroundColor: 'purple',
+  },
+  containerHorizontal2: {
+    flex: 2,
+    backgroundColor:'yellow',
+  },
+  containerHorizontal3: {
     flex: 2,
     backgroundColor: 'pink',
-    
-    
-    
   },
-  container4: {
-    flex:2,
-    backgroundColor:'yellow',
-    
-  }
-
 });
